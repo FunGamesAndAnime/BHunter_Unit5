@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 722996433785291946}
   m_Layer: 0
   m_Name: minus 1
-  m_TagString: Untagged
+  m_TagString: hazord
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236bcff7002fdd84aa96f10bf8a27749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointvalue: -5
+  explosion: {fileID: 7535607469619513247, guid: ac10190cf200c4f7e881ca8e41d3d760, type: 3}
 --- !u!65 &7628930010148160307
 BoxCollider:
   m_ObjectHideFlags: 0
