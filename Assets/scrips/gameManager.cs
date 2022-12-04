@@ -10,17 +10,27 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI scoretext;
     public TextMeshProUGUI gameovertext;
     private int score = 0;
-    public bool gameact = true;
-    //gamefileS
-    private const float spawnrate = 2.0f;
+    public bool gameact = false;
+   
+    private float spawnrate = 2.0f;
     public List<GameObject> prefabs;
     public Button restartbutten;
+    public GameObject titleScrean;
     // Start is called before the first frame update
     void Start()
     {
+        
+        
+    }
+    public void SartGame(int diff)
+    {
+        gameact = true;
+        score = 0;
         StartCoroutine(spawnTarget());
         Updatescore(0);
-        
+        titleScrean.gameObject.SetActive(false);
+        spawnrate = spawnrate / diff;
+
     }
     public void gameover()
     {
